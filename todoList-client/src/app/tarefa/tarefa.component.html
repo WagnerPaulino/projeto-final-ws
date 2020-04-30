@@ -1,0 +1,11 @@
+<div class="container">
+    <h1 style="text-align: center;">Tarefas</h1>
+    <form (ngSubmit)="save()" style="padding: 5px 0px 5px 0px;">
+        <input placeholder="Tarefa" name="nome" [(ngModel)]="tarefa.nome">
+        <button type="submit">Salvar</button>
+    </form>
+    <div *ngFor="let tarefa of tarefas" style="padding: 10px 0px 10px 0px;">
+        <label style="min-width: 15em;">{{tarefa.nome}}</label>
+        <button type="button" (click)="deletar(tarefa.id)">Feita</button>
+    </div>
+</div>
