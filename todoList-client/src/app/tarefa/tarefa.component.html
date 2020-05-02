@@ -1,6 +1,6 @@
 <div class="container">
     <h1 style="text-align: center;">Tarefas</h1>
-    <form (ngSubmit)="save()" style="padding: 5px 0px 5px 0px;">
+    <form (ngSubmit)="save()" style="padding: 5px 0px 5px 0px;" autocomplete="off">
         <input placeholder="Tarefa" name="nome" [(ngModel)]="tarefa.nome">
         <button type="submit">Salvar</button>
     </form>
